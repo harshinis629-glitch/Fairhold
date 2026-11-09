@@ -20,7 +20,7 @@ Fairhold eliminates security deposit disputes between equipment owners and rente
 - **Transparent Renter Receipts:** Renters receive an itemized settlement ledger showing exactly how much of their security deposit was captured for repairs and how much was released.
 - **Dispute Resolution Channel:** Renters can file a formal dispute with custom statements if they contest a deduction.
 
-### 3. 💳 PayPal Sandbox Escrow Engine
+### 3. 💳 PayPal Sandbox Payment Workflow
 - **Authorization:** Authorizes total rental amount (`Rental Fee + Security Deposit`) upfront via PayPal REST API `POST /v2/checkout/orders` with `intent: "AUTHORIZE"`.
 - **Partial Capture:** Upon return and owner review, captures only the `Rental Fee + Approved Damage Deductions` via `POST /v2/payments/authorizations/{auth_id}/capture`.
 - **Immediate Void:** Immediately voids the remaining authorized balance via `POST /v2/payments/authorizations/{auth_id}/void`, releasing the remaining deposit back to the renter.
