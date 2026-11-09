@@ -1,8 +1,8 @@
-# Fairhold – AI-Powered Rental Deposit Protection
+## Fairhold – AI-Powered Rental Deposit Protection
 
-> **A modern fintech escrow and automated damage adjudication platform for peer-to-peer and studio equipment rentals.**
+> **A modern Rental deposit protection and automated damage adjudication platform for peer-to-peer and studio equipment rentals.**
 
-Fairhold eliminates security deposit disputes between equipment owners and renters through deterministic, objective AI comparative inspection (Google Gemini Vision) coupled with automated escrow execution (PayPal Sandbox REST API authorization, partial capture, and void).
+Fairhold eliminates security deposit disputes between equipment owners and renters through  AI-assisted comparative damage inspection (Google Gemini Vision) coupled with PayPal authorization, capture and void workflow (PayPal Sandbox REST API authorization, partial capture, and void).
 
 ---
 
@@ -10,7 +10,7 @@ Fairhold eliminates security deposit disputes between equipment owners and rente
 
 ### 1. 🔍 AI Damage Detection (Gemini Vision)
 - **Comparative Baseline Inspection:** Compares pristine baseline handover photos (BEFORE) against return condition photos (AFTER).
-- **Forensic Anomaly Detection:** Detects new scratches, dents, cracks, abrasions, and structural flaws.
+- **Potential damage identification:** Detects new scratches, dents, cracks, abrasions, and structural flaws.
 - **Side-by-Side Visual Viewer:** Interactive comparison featuring split sliders, before/after toggle flips, and bounding box damage locators.
 - **Detailed Forensic Output:** For each detected anomaly, provides part name, damage type, severity (*Minor*, *Moderate*, *Severe*), confidence percentage (e.g. 94%), estimated restoration cost, and recommended deposit deduction.
 
@@ -174,5 +174,14 @@ Fairhold/
 ├── .env.example
 └── README.md
 ```
+
+## ⚠️ Limitations & Responsible Use
+
+- AI-generated damage findings are suggestions and must be reviewed by the equipment owner.
+- AI cannot guarantee that every detected mark represents new damage.
+- Final deductions require owner approval.
+- PayPal Sandbox uses test transactions and does not process real payments.
+- Fairhold provides a rental deposit protection workflow and is not a regulated escrow service.
+
 ## Author
 HARSHINI S
