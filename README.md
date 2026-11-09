@@ -174,3 +174,5 @@ Fairhold/
 ├── .env.example
 └── README.md
 ```
+##Author
+HARSHINI S
